@@ -1,11 +1,11 @@
-# (Project Name)
+# (Code Challenge Week 1)
 
-#### Date, 2018/09/14
+#### Date, 2024/09/29
 
-#### By *Hamida Mstafa Mohamed*
+#### By *Joy Gatimu*
 
 ## Description
-It's a webpage that shows different types of triangles and what they look like.
+It's a webpage that displays the given code challenge solutions.
 
 ## Installation
 You use git clone to be able to download the documents in the GitHub

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speed Check</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        #result {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Speed Check</h1>
+    <script>
+       
+        function checkSpeed(speed) {
+            const speedLimit = 70;
+            const demeritPointsThreshold = 12;
+            const pointsPerExcessSpeed = 5;
+            let message = '';
+
+            if (speed < speedLimit) {
+                message = "Ok";
+            } else {
+                const excessSpeed = speed - speedLimit;
+                const demeritPoints = Math.floor(excessSpeed / pointsPerExcessSpeed);
+
+                message = "Points: " + demeritPoints;
+
+                if (demeritPoints > demeritPointsThreshold) {
+                    message += " - License suspended";
+                }
+            }
+
+            
+            document.getElementById('result').innerText = message;
+        }
+
+        
+        const speedInput = parseFloat(prompt("Enter the speed of the car (in km/h):"));
+
+        
+        if (!isNaN(speedInput)) {
+            checkSpeed(speedInput);
+        } else {
+            document.getElementById('result').innerText = "Please enter a valid number.";
+        }
+    </script>
+
+    <div id="result"></div>
+</body>
+</html>

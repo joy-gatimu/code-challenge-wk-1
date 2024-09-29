@@ -19,7 +19,7 @@ Git clone https://github.com/joy-gatimu/code-challenge-wk-1.git
 ```
 
 # Live Link
-[Git](gh-pages link)
+https://joy-gatimu.github.io/code-challenge-wk-1/
 
 ## Technologies used
 HTML
